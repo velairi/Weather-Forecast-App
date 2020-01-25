@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8CE2918E23DCCA3F0029AFA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2918D23DCCA3F0029AFA2 /* AppDelegate.swift */; };
-		8CE2919023DCCA3F0029AFA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2918F23DCCA3F0029AFA2 /* SceneDelegate.swift */; };
-		8CE2919223DCCA3F0029AFA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2919123DCCA3F0029AFA2 /* ViewController.swift */; };
 		8CE2919523DCCA3F0029AFA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2919323DCCA3F0029AFA2 /* Main.storyboard */; };
 		8CE2919723DCCA410029AFA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2919623DCCA410029AFA2 /* Assets.xcassets */; };
 		8CE2919A23DCCA410029AFA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2919823DCCA410029AFA2 /* LaunchScreen.storyboard */; };
 		8CE291A523DCCA410029AFA2 /* GOAT_Take_Home_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE291A423DCCA410029AFA2 /* GOAT_Take_Home_ProjectTests.swift */; };
+		8CE291B123DCD1990029AFA2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE291AF23DCD1990029AFA2 /* HomeViewController.swift */; };
+		8CE291B223DCD1990029AFA2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CE291B023DCD1990029AFA2 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +29,6 @@
 /* Begin PBXFileReference section */
 		8CE2918A23DCCA3F0029AFA2 /* GOAT Take-Home Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOAT Take-Home Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE2918D23DCCA3F0029AFA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CE2918F23DCCA3F0029AFA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CE2919123DCCA3F0029AFA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8CE2919423DCCA3F0029AFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CE2919623DCCA410029AFA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CE2919923DCCA410029AFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +36,8 @@
 		8CE291A023DCCA410029AFA2 /* GOAT Take-Home ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GOAT Take-Home ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE291A423DCCA410029AFA2 /* GOAT_Take_Home_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOAT_Take_Home_ProjectTests.swift; sourceTree = "<group>"; };
 		8CE291A623DCCA410029AFA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CE291AF23DCD1990029AFA2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8CE291B023DCD1990029AFA2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				8CE2918D23DCCA3F0029AFA2 /* AppDelegate.swift */,
-				8CE2918F23DCCA3F0029AFA2 /* SceneDelegate.swift */,
-				8CE2919123DCCA3F0029AFA2 /* ViewController.swift */,
+				8CE291AF23DCD1990029AFA2 /* HomeViewController.swift */,
+				8CE291B023DCD1990029AFA2 /* HomeViewController.xib */,
 				8CE2919323DCCA3F0029AFA2 /* Main.storyboard */,
 				8CE2919623DCCA410029AFA2 /* Assets.xcassets */,
 				8CE2919823DCCA410029AFA2 /* LaunchScreen.storyboard */,
@@ -183,6 +183,7 @@
 				8CE2919A23DCCA410029AFA2 /* LaunchScreen.storyboard in Resources */,
 				8CE2919723DCCA410029AFA2 /* Assets.xcassets in Resources */,
 				8CE2919523DCCA3F0029AFA2 /* Main.storyboard in Resources */,
+				8CE291B223DCD1990029AFA2 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CE2919223DCCA3F0029AFA2 /* ViewController.swift in Sources */,
 				8CE2918E23DCCA3F0029AFA2 /* AppDelegate.swift in Sources */,
-				8CE2919023DCCA3F0029AFA2 /* SceneDelegate.swift in Sources */,
+				8CE291B123DCD1990029AFA2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
