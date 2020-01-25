@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CE2918E23DCCA3F0029AFA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2918D23DCCA3F0029AFA2 /* AppDelegate.swift */; };
+		8CE2919023DCCA3F0029AFA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2918F23DCCA3F0029AFA2 /* SceneDelegate.swift */; };
+		8CE2919223DCCA3F0029AFA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2919123DCCA3F0029AFA2 /* ViewController.swift */; };
+		8CE2919523DCCA3F0029AFA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2919323DCCA3F0029AFA2 /* Main.storyboard */; };
+		8CE2919723DCCA410029AFA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2919623DCCA410029AFA2 /* Assets.xcassets */; };
+		8CE2919A23DCCA410029AFA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE2919823DCCA410029AFA2 /* LaunchScreen.storyboard */; };
+		8CE291A523DCCA410029AFA2 /* GOAT_Take_Home_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE291A423DCCA410029AFA2 /* GOAT_Take_Home_ProjectTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CE291A123DCCA410029AFA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CE2918223DCCA3F0029AFA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CE2918923DCCA3F0029AFA2;
+			remoteInfo = "GOAT Take-Home Project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8CE2918A23DCCA3F0029AFA2 /* GOAT Take-Home Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOAT Take-Home Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE2918D23DCCA3F0029AFA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CE2918F23DCCA3F0029AFA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8CE2919123DCCA3F0029AFA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CE2919423DCCA3F0029AFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CE2919623DCCA410029AFA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CE2919923DCCA410029AFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CE2919B23DCCA410029AFA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CE291A023DCCA410029AFA2 /* GOAT Take-Home ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GOAT Take-Home ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE291A423DCCA410029AFA2 /* GOAT_Take_Home_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOAT_Take_Home_ProjectTests.swift; sourceTree = "<group>"; };
+		8CE291A623DCCA410029AFA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CE2918723DCCA3F0029AFA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE2919D23DCCA410029AFA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CE2918123DCCA3F0029AFA2 = {
+			isa = PBXGroup;
+			children = (
+				8CE2918C23DCCA3F0029AFA2 /* GOAT Take-Home Project */,
+				8CE291A323DCCA410029AFA2 /* GOAT Take-Home ProjectTests */,
+				8CE2918B23DCCA3F0029AFA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CE2918B23DCCA3F0029AFA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CE2918A23DCCA3F0029AFA2 /* GOAT Take-Home Project.app */,
+				8CE291A023DCCA410029AFA2 /* GOAT Take-Home ProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CE2918C23DCCA3F0029AFA2 /* GOAT Take-Home Project */ = {
+			isa = PBXGroup;
+			children = (
+				8CE2918D23DCCA3F0029AFA2 /* AppDelegate.swift */,
+				8CE2918F23DCCA3F0029AFA2 /* SceneDelegate.swift */,
+				8CE2919123DCCA3F0029AFA2 /* ViewController.swift */,
+				8CE2919323DCCA3F0029AFA2 /* Main.storyboard */,
+				8CE2919623DCCA410029AFA2 /* Assets.xcassets */,
+				8CE2919823DCCA410029AFA2 /* LaunchScreen.storyboard */,
+				8CE2919B23DCCA410029AFA2 /* Info.plist */,
+			);
+			path = "GOAT Take-Home Project";
+			sourceTree = "<group>";
+		};
+		8CE291A323DCCA410029AFA2 /* GOAT Take-Home ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CE291A423DCCA410029AFA2 /* GOAT_Take_Home_ProjectTests.swift */,
+				8CE291A623DCCA410029AFA2 /* Info.plist */,
+			);
+			path = "GOAT Take-Home ProjectTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CE2918923DCCA3F0029AFA2 /* GOAT Take-Home Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE291A923DCCA410029AFA2 /* Build configuration list for PBXNativeTarget "GOAT Take-Home Project" */;
+			buildPhases = (
+				8CE2918623DCCA3F0029AFA2 /* Sources */,
+				8CE2918723DCCA3F0029AFA2 /* Frameworks */,
+				8CE2918823DCCA3F0029AFA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GOAT Take-Home Project";
+			productName = "GOAT Take-Home Project";
+			productReference = 8CE2918A23DCCA3F0029AFA2 /* GOAT Take-Home Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CE2919F23DCCA410029AFA2 /* GOAT Take-Home ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE291AC23DCCA410029AFA2 /* Build configuration list for PBXNativeTarget "GOAT Take-Home ProjectTests" */;
+			buildPhases = (
+				8CE2919C23DCCA410029AFA2 /* Sources */,
+				8CE2919D23DCCA410029AFA2 /* Frameworks */,
+				8CE2919E23DCCA410029AFA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CE291A223DCCA410029AFA2 /* PBXTargetDependency */,
+			);
+			name = "GOAT Take-Home ProjectTests";
+			productName = "GOAT Take-Home ProjectTests";
+			productReference = 8CE291A023DCCA410029AFA2 /* GOAT Take-Home ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CE2918223DCCA3F0029AFA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Valerie Don";
+				TargetAttributes = {
+					8CE2918923DCCA3F0029AFA2 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					8CE2919F23DCCA410029AFA2 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 8CE2918923DCCA3F0029AFA2;
+					};
+				};
+			};
+			buildConfigurationList = 8CE2918523DCCA3F0029AFA2 /* Build configuration list for PBXProject "GOAT Take-Home Project" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CE2918123DCCA3F0029AFA2;
+			productRefGroup = 8CE2918B23DCCA3F0029AFA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CE2918923DCCA3F0029AFA2 /* GOAT Take-Home Project */,
+				8CE2919F23DCCA410029AFA2 /* GOAT Take-Home ProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CE2918823DCCA3F0029AFA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE2919A23DCCA410029AFA2 /* LaunchScreen.storyboard in Resources */,
+				8CE2919723DCCA410029AFA2 /* Assets.xcassets in Resources */,
+				8CE2919523DCCA3F0029AFA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE2919E23DCCA410029AFA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CE2918623DCCA3F0029AFA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE2919223DCCA3F0029AFA2 /* ViewController.swift in Sources */,
+				8CE2918E23DCCA3F0029AFA2 /* AppDelegate.swift in Sources */,
+				8CE2919023DCCA3F0029AFA2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE2919C23DCCA410029AFA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE291A523DCCA410029AFA2 /* GOAT_Take_Home_ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CE291A223DCCA410029AFA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CE2918923DCCA3F0029AFA2 /* GOAT Take-Home Project */;
+			targetProxy = 8CE291A123DCCA410029AFA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CE2919323DCCA3F0029AFA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CE2919423DCCA3F0029AFA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CE2919823DCCA410029AFA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CE2919923DCCA410029AFA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CE291A723DCCA410029AFA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CE291A823DCCA410029AFA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CE291AA23DCCA410029AFA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 445RAN3N26;
+				INFOPLIST_FILE = "GOAT Take-Home Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ValerieDon.GOAT-Take-Home-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CE291AB23DCCA410029AFA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 445RAN3N26;
+				INFOPLIST_FILE = "GOAT Take-Home Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ValerieDon.GOAT-Take-Home-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CE291AD23DCCA410029AFA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 445RAN3N26;
+				INFOPLIST_FILE = "GOAT Take-Home ProjectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ValerieDon.GOAT-Take-Home-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GOAT Take-Home Project.app/GOAT Take-Home Project";
+			};
+			name = Debug;
+		};
+		8CE291AE23DCCA410029AFA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 445RAN3N26;
+				INFOPLIST_FILE = "GOAT Take-Home ProjectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ValerieDon.GOAT-Take-Home-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GOAT Take-Home Project.app/GOAT Take-Home Project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CE2918523DCCA3F0029AFA2 /* Build configuration list for PBXProject "GOAT Take-Home Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE291A723DCCA410029AFA2 /* Debug */,
+				8CE291A823DCCA410029AFA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CE291A923DCCA410029AFA2 /* Build configuration list for PBXNativeTarget "GOAT Take-Home Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE291AA23DCCA410029AFA2 /* Debug */,
+				8CE291AB23DCCA410029AFA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CE291AC23DCCA410029AFA2 /* Build configuration list for PBXNativeTarget "GOAT Take-Home ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE291AD23DCCA410029AFA2 /* Debug */,
+				8CE291AE23DCCA410029AFA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CE2918223DCCA3F0029AFA2 /* Project object */;
+}
