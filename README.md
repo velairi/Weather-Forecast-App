@@ -1,5 +1,8 @@
 # GOAT-Take-Home-Project
 
+<b>Project Requirements</b>
+- Given 24 hours, create an app that requests and retrieves users location and then returns daily forecasts for that location in the form or a tableview or collectionview, then on didSelect, user will be taken to a page that shows the datapoint summary of the forecast.
+
 <b>What I've Accomplished So Far</b>
 - Made API calls to DarkSkyAPI using Foundation framework
 - Was able to parse the JSON information received from the API
