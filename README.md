@@ -18,4 +18,4 @@
 - Remove "Start" button (which asks for location permissions) after user has given us authorization.
   
 
-Currently, what you have is an app that is able to get the forecasts for San Francisco for the next eight days.
+Currently, what you will see in the app is the forecasts for San Francisco for the next eight days and a start button that requests user location, but does not connect to getting user location (yet!). 
