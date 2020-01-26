@@ -10,10 +10,12 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
-    let summary = [Weather]()
+    @IBOutlet weak var summaryLabel: UILabel!
+
+    var summaryLabelString = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        summaryLabel.text = summaryLabelString
     }
 }

@@ -14,6 +14,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tableview: UITableView!
 
     var forecastData = [Weather]()
+    var dates: [String] = [""]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableview.delegate = self
         tableview.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         updateWeatherForLocation(location: "New York")
+        tableview.allowsSelection = true
+        dates = getDates()
     }
 
     func updateWeatherForLocation (location:String) {
@@ -41,21 +44,28 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
 
+    func getDates() -> [String] {
+        var currentDay = 0, lastDay = 6
+        while currentDay <= lastDay {
+            let date = Calendar.current.date(byAdding: .day, value: currentDay, to: Date())
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MMMM dd, yyyy"
+            dates.append(dateFormatter.string(from: date!))
+            currentDay += 1
+        }
+        return dates
+    }
+
+
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return forecastData.count
     }
 
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let date = Calendar.current.date(byAdding: .day, value: section, to: Date())
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM dd, yyyy"
-
-        return dateFormatter.string(from: date!)
-    }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let weatherObject = forecastData[indexPath.section]
+        let weatherObject = forecastData[indexPath.row]
         cell.textLabel?.text = "Highs: \(weatherObject.highTemp)°F \n" + "Lows: \(weatherObject.lowTemp)°F"
         cell.detailTextLabel?.text = "\(Int(weatherObject.temperature)) °F"
         cell.imageView?.image = UIImage(named: weatherObject.icon)
@@ -64,6 +74,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailsVC = DetailsViewController()
+        let weatherObject = forecastData[indexPath.row]
+        detailsVC.summaryLabelString = weatherObject.summary
         self.navigationController?.pushViewController(detailsVC, animated: true)
         tableview.deselectRow(at: indexPath, animated: true)
     }
