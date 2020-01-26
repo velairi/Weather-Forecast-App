@@ -1,12 +1,12 @@
 # GOAT-Take-Home-Project
 
 <b>What I've Accomplished So Far</b>
-- Made API calls to DarkSkyAPI
+- Made API calls to DarkSkyAPI using Foundation framework
 - Was able to parse the JSON information received from the API
 - Created a tableview with daily forecasts, icons, high/low temperature for the next seven-eight days 
 - Created a summary page that displayed the summary for each daily forecast
 - Forecasts were made based on location 
-- Ask user for permission to use their location
+- Asked user for permission to use their location
 
 <b>Assumptions</b>
 - I didn't have enough time to ask questions and considering that I did this on the weekend, I wasn't sure if anyone would be available, so I went ahead and made some assumptions.
