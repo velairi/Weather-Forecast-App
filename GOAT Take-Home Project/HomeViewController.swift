@@ -28,7 +28,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableview.allowsSelection = true
         locationMgr.delegate = self
         dates = getDates()
-        
+
         //TO DO: replace hardcoded string with a coordinate that this method can use to get the data from that location
         updateWeatherForLocation(location: "San Francisco")
     }
@@ -70,6 +70,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return forecastData.count
     }
 
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "San Francisco"
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as! ForecastTableViewCell
         let weatherObject = forecastData[indexPath.row]
@@ -93,7 +97,7 @@ extension HomeViewController: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
-            print("I'm saying: " + "\(location.coordinate.latitude)")
+            print("\(location.coordinate.latitude)")
             currentLocation = location
         }
         locationMgr.stopUpdatingLocation()
