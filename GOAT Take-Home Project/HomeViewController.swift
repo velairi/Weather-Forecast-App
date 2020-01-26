@@ -14,13 +14,13 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tableview: UITableView!
 
     var forecastData = [Weather]()
-    var dates: [String] = [""]
+    var dates: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.dataSource = self
         tableview.delegate = self
-        tableview.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableview.register(UINib(nibName: "ForecastTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
         updateWeatherForLocation(location: "New York")
         tableview.allowsSelection = true
         dates = getDates()
@@ -33,7 +33,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                     Weather.forecast(withLocation: location.coordinate, completion: { (results:[Weather]?) in
                         if let weatherData = results {
                             self.forecastData = weatherData
-                            print("This is printing out my daily forecasts: ", self.forecastData)
                             DispatchQueue.main.async {
                                 self.tableview.reloadData()
                             }
@@ -45,7 +44,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     func getDates() -> [String] {
-        var currentDay = 0, lastDay = 6
+        var currentDay = 0, lastDay = 7
         while currentDay <= lastDay {
             let date = Calendar.current.date(byAdding: .day, value: currentDay, to: Date())
             let dateFormatter = DateFormatter()
@@ -56,19 +55,17 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return dates
     }
 
-
-    }
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return forecastData.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as! ForecastTableViewCell
         let weatherObject = forecastData[indexPath.row]
-        cell.textLabel?.text = "Highs: \(weatherObject.highTemp)°F \n" + "Lows: \(weatherObject.lowTemp)°F"
-        cell.detailTextLabel?.text = "\(Int(weatherObject.temperature)) °F"
-        cell.imageView?.image = UIImage(named: weatherObject.icon)
+        let date = dates[indexPath.row]
+        cell.forecastLabel.font = UIFont(name: "Futura", size: 15)
+        cell.forecastLabel.text = "\(date) \n" + "Highs: \(weatherObject.highTemp)°F \n" + "Lows: \(weatherObject.lowTemp)°F"
+        cell.iconImageView?.image = UIImage(named: weatherObject.icon)
         return cell
     }
 
