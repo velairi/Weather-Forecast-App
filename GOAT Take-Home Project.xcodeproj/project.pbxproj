@@ -14,6 +14,9 @@
 		8CE291A523DCCA410029AFA2 /* GOAT_Take_Home_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE291A423DCCA410029AFA2 /* GOAT_Take_Home_ProjectTests.swift */; };
 		8CE291B123DCD1990029AFA2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE291AF23DCD1990029AFA2 /* HomeViewController.swift */; };
 		8CE291B223DCD1990029AFA2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CE291B023DCD1990029AFA2 /* HomeViewController.xib */; };
+		8CE291B423DD246A0029AFA2 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE291B323DD246A0029AFA2 /* Weather.swift */; };
+		8CE291B723DD2D4D0029AFA2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE291B523DD2D4D0029AFA2 /* DetailsViewController.swift */; };
+		8CE291B823DD2D4D0029AFA2 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CE291B623DD2D4D0029AFA2 /* DetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		8CE291A623DCCA410029AFA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CE291AF23DCD1990029AFA2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8CE291B023DCD1990029AFA2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8CE291B323DD246A0029AFA2 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		8CE291B523DD2D4D0029AFA2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		8CE291B623DD2D4D0029AFA2 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				8CE2918D23DCCA3F0029AFA2 /* AppDelegate.swift */,
+				8CE291B323DD246A0029AFA2 /* Weather.swift */,
 				8CE291AF23DCD1990029AFA2 /* HomeViewController.swift */,
 				8CE291B023DCD1990029AFA2 /* HomeViewController.xib */,
+				8CE291B523DD2D4D0029AFA2 /* DetailsViewController.swift */,
+				8CE291B623DD2D4D0029AFA2 /* DetailsViewController.xib */,
 				8CE2919323DCCA3F0029AFA2 /* Main.storyboard */,
 				8CE2919623DCCA410029AFA2 /* Assets.xcassets */,
 				8CE2919823DCCA410029AFA2 /* LaunchScreen.storyboard */,
@@ -182,6 +191,7 @@
 			files = (
 				8CE2919A23DCCA410029AFA2 /* LaunchScreen.storyboard in Resources */,
 				8CE2919723DCCA410029AFA2 /* Assets.xcassets in Resources */,
+				8CE291B823DD2D4D0029AFA2 /* DetailsViewController.xib in Resources */,
 				8CE2919523DCCA3F0029AFA2 /* Main.storyboard in Resources */,
 				8CE291B223DCD1990029AFA2 /* HomeViewController.xib in Resources */,
 			);
@@ -202,7 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CE2918E23DCCA3F0029AFA2 /* AppDelegate.swift in Sources */,
+				8CE291B423DD246A0029AFA2 /* Weather.swift in Sources */,
 				8CE291B123DCD1990029AFA2 /* HomeViewController.swift in Sources */,
+				8CE291B723DD2D4D0029AFA2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
