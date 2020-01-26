@@ -1,6 +1,6 @@
 # GOAT-Take-Home-Project
 
-What I've Accomplished
+<b>What I've Accomplished So Far</b>
 
 Assumptions
 
