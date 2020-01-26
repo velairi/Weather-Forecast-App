@@ -9,7 +9,6 @@
 - Asked user for permission to use their location
 
 <b>Assumptions</b>
-- I didn't have enough time to ask questions and considering that I did this on the weekend, I wasn't sure if anyone would be available, so I went ahead and made some assumptions.
 - Made the assumption that we're looking for a week of forecasts
 - Made the assumption that we're supporting devices iOS 10 and up
 
