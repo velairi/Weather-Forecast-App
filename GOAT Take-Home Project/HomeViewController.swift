@@ -13,17 +13,28 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     @IBOutlet weak var tableview: UITableView!
 
+    let locationMgr = CLLocationManager()
     var forecastData = [Weather]()
     var dates: [String] = []
+    var currentLocation: CLLocation = CLLocation.init(latitude: 37.774929, longitude: -122.419418)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.dataSource = self
         tableview.delegate = self
         tableview.register(UINib(nibName: "ForecastTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
-        updateWeatherForLocation(location: "New York")
+        navigationItem.title = "Forecast"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .plain, target: self, action: #selector(start))
         tableview.allowsSelection = true
+        locationMgr.delegate = self
         dates = getDates()
+        
+        //TO DO: replace hardcoded string with a coordinate that this method can use to get the data from that location
+        updateWeatherForLocation(location: "San Francisco")
+    }
+
+    @objc func start() {
+        getAuthorization()
     }
 
     func updateWeatherForLocation (location:String) {
@@ -75,5 +86,40 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         detailsVC.summaryLabelString = weatherObject.summary
         self.navigationController?.pushViewController(detailsVC, animated: true)
         tableview.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+extension HomeViewController: CLLocationManagerDelegate {
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            print("I'm saying: " + "\(location.coordinate.latitude)")
+            currentLocation = location
+        }
+        locationMgr.stopUpdatingLocation()
+    }
+
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
+
+    func getAuthorization() {
+        let status = CLLocationManager.authorizationStatus()
+        switch status {
+        case .notDetermined:
+            locationMgr.requestAlwaysAuthorization()
+            return
+        case .denied, .restricted:
+            let alert = UIAlertController(title: "Location Services disabled", message: "Please enable Location Services in Settings", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+            return
+        case .authorizedAlways, .authorizedWhenInUse:
+            locationMgr.startUpdatingLocation()
+            break
+        @unknown default:
+            print("Do nothing")
+        }
     }
 }
